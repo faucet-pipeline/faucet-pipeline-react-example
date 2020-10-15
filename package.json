@@ -1,0 +1,33 @@
+{
+  "name": "faucet-pipeline-react-example",
+  "version": "1.0.0",
+  "description": "An example npm project that shows how to build React applications with faucet",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && faucet",
+    "serve": "npm run clean && faucet --liveserve --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faucet-pipeline/faucet-pipeline-react-example.git"
+  },
+  "author": "Lars Hupel <lars.hupel@innoq.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/faucet-pipeline/faucet-pipeline-react-example/issues"
+  },
+  "homepage": "https://github.com/faucet-pipeline/faucet-pipeline-react-example#readme",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "faucet-pipeline-essugar": "0.0.3",
+    "faucet-pipeline-js": "^2.1.6",
+    "faucet-pipeline-jsx": "^2.1.6",
+    "faucet-pipeline-static": "^1.2.0",
+    "live-server": "^1.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
