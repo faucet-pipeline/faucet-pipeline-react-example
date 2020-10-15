@@ -45,3 +45,26 @@ $ NODE_ENV=production npm run build
 ## Configuration
 
 The faucet configuration can be found in `faucet.config.js`.
+
+There is an alternative configuration in `faucet.essugar-config.js`.
+It can be selected as follows:
+
+```
+$ npm run serve -- -c faucet.essugar-config.js
+```
+
+It differs from the default configuration in the following ways:
+
+1. It uses the (experimental) `faucet-pipeline-essugar` instead of `faucet-pipeline-js`.
+2. JSX is transpiled using [Sucrase](https://github.com/alangpierce/sucrase) instead of Babel.
+3. The entire React/ReactDOM dependency is bundled into `dist/index.js`.
+
+```
+dist/
+├── index.html
+└── index.js
+```
+
+For now, we recommend choosing the default configuration over the alternative one.
+However, `faucet-pipeline-js` does not understand the `process.env.NODE_ENV` convention in JS source code, which means that code using that variable will fail in the browser.
+`faucet-pipeline-essugar` can replace this code based on the environment variable that is set during build time.
