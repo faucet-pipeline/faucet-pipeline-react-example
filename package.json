@@ -19,14 +19,14 @@
   },
   "homepage": "https://github.com/faucet-pipeline/faucet-pipeline-react-example#readme",
   "dependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "faucet-pipeline-essugar": "0.0.3",
+    "faucet-pipeline-essugar": "^0.0.5",
     "faucet-pipeline-js": "^2.1.6",
     "faucet-pipeline-jsx": "^2.1.6",
-    "faucet-pipeline-static": "^1.2.0",
+    "faucet-pipeline-static": "^2.0.0",
     "live-server": "^1.2.1",
     "rimraf": "^3.0.2"
   }
